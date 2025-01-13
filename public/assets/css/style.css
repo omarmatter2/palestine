@@ -486,6 +486,7 @@ p {
 .voted-countries .modal-body ul {
     margin-top: 2.2vh;
     height: 63.7vh;
+    height: 56vh;
     overflow: auto;
     margin-bottom: 4.4vh;
 }
