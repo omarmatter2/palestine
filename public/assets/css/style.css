@@ -1,0 +1,907 @@
+@font-face {
+    font-family: 'Expo Arabic Book';
+    src: url('assets/fonts/ExpoArabic-Book.woff2') format('woff2'),
+        url('assets/fonts/ExpoArabic-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('assets/fonts/ExpoArabic-Medium.woff2') format('woff2'),
+        url('assets/fonts/ExpoArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('assets/fonts/ExpoArabic-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/ExpoArabic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit Extra";
+    src: url("assets/fonts/Outfit-ExtraBold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit Semi";
+    src: url("assets/fonts/Outfit-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit Extra";
+    src: url("assets/fonts/Outfit-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/Outfit-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Outfit !important;
+}
+
+* {
+    font-family: Outfit;
+}
+
+
+
+
+/* ----------------- */
+
+.btn:focus-visible,
+input:focus-visible,
+.dropdown:focus-visible,
+.dropdown-toggle:focus-visible {
+
+    outline: 0 !important;
+}
+
+
+
+input:focus {
+    box-shadow: unset !important;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+
+.vps-page {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.vps-page .vps-bg {
+    height: 100vh;
+    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.vps-page .vps-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000b3;
+}
+
+.vps-page .vps-bg .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vps-page .vps-content {
+    position: relative;
+    height: 100vh;
+}
+
+.vps-page .vps-content .container {
+    height: 100%;
+}
+
+.vps-page .vps-content .container .sub-container {
+    /* max-width: 64%; */
+    /* max-width: 50%; */
+    padding-top: 50px;
+    padding-top: 5.5vh;
+    padding-bottom: 30px;
+    padding-bottom: 3.3vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vps-page .vps-content .vps-header {
+    /* width: 82px; */
+    height: 9.5vh;
+}
+
+.vps-page .vps-content .vps-header img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+
+.vps-page .vps-content .vps-body {}
+
+.vps-page .vps-content .vps-body h1 {
+    font-size: 24px;
+    font-size: 2.67vh;
+    font-weight: 400;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3.3vh;
+    margin-bottom: 3.3vh;
+}
+
+
+.vps-page .vps-content .vps-body h1 strong {
+    font-weight: 800;
+}
+
+.vps-page .vps-content .vps-body h2 {
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 2vh;
+    color: #fff;
+}
+
+.vps-page .vps-content .vps-body .vps-num {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 86px;
+    font-size: 9.56vh;
+    margin-top: 2.2vh;
+    display: block;
+}
+
+.vps-page .vps-content .vps-body .vps-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 1.66vh;
+    margin-bottom: 3.33vh;
+}
+
+.vps-page .vps-content .vps-body .vps-details ul {
+    display: flex;
+}
+
+.vps-page .vps-content .vps-body .vps-details ul li {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-inline-end: -10px;
+}
+
+.vps-page .vps-content .vps-body .vps-details ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vps-page .vps-content .vps-body .vps-details .more-btn {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 1.5vh;
+    font-weight: 400;
+    padding: 0;
+    border: 0;
+}
+
+.vps-page .vps-content .vps-body .voting-form {
+    display: flex;
+    gap: 5px;
+}
+
+.vps-page .vps-content .vps-body .voting-form .form-control {
+    width: 29%;
+    height: 48px;
+    height: 5.33vh;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.78vh;
+    color: #000;
+    border: 0;
+}
+
+
+.vps-page .vps-content .vps-body .voting-form .form-control::placeholder {
+    color: #989898;
+}
+
+
+
+.vps-page .vps-content .vps-body .voting-form .select2-container {
+    width: 29% !important;
+    width: 100% !important;
+    !i;
+    !;
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container .selection {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container .select2-selection--single {
+    height: 48px;
+    height: 5.33vh;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container .select2-selection--single .select2-selection__rendered {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    /* color: #989898; */
+
+    font-size: 16px;
+
+    font-size: 1.78vh;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    font-size: 16px;
+    font-size: 1.78vh;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    height: 100%;
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    /* line-height: 1.5; */
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #989898;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.78vh;
+    /* line-height: 1.5; */
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-search--dropdown .select2-search__field {
+    font-size: 1.78vh;
+    border: 0;
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__arrow b {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-results__option {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-results__option--selectable {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-search--dropdown {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-search--dropdown .select2-search__field {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-search--dropdown .select2-search__field {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-results {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-results__options {}
+
+.vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-results>.select2-results__options {}
+
+
+.select2-results__option {
+    color: #00A53A;
+    color: #000;
+    font-size: 1.78vh;
+}
+
+.select2-results__option--selectable {}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #00A53A;
+    color: #fff;
+}
+
+.vps-page .vps-content .vps-body .voting-form .vote-btn {
+    width: 13%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 1.78vh;
+    background: #00A53A;
+    border-radius: 4px;
+    padding: 0;
+    border: 0;
+    height: 48px;
+    height: 5.33vh;
+}
+
+.vps-page .vps-content .vps-footer {}
+
+.vps-page .vps-content .vps-footer p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1.1vh;
+    font-size: 1.78vh;
+}
+
+.vps-page .vps-content .vps-footer ul {
+    display: flex;
+    gap: 20px;
+}
+
+.vps-page .vps-content .vps-footer ul li {}
+
+.vps-page .vps-content .vps-footer ul li a {}
+
+.vps-page .vps-content .vps-footer ul li a img {}
+
+
+.voted-countries {
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+}
+
+.voted-countries .modal-dialog {
+    width: 29vw;
+    margin: 0;
+    margin-inline-start: auto;
+    height: 100vh;
+    /* top: 0; */
+    /* bottom: 0; */
+}
+
+.voted-countries .modal-content {
+    border: 0;
+    background-color: #000000b3;
+    border-radius: 0;
+    height: 100vh;
+}
+
+.voted-countries .modal-body {
+    display: block;
+    padding: 0;
+    padding-top: 11.4vh;
+    height: 100vh;
+}
+
+.voted-countries .modal-body h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    font-size: 2.67vh;
+    margin-bottom: 1.1vh;
+    padding: 0 2.08vw;
+}
+
+.voted-countries .modal-body>p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.7vh;
+    margin-bottom: 1.1vh;
+    padding: 0 2.08vw;
+}
+
+.voted-countries .modal-body ul {
+    margin-top: 2.2vh;
+    height: 63.7vh;
+    overflow: auto;
+    margin-bottom: 4.4vh;
+}
+
+.voted-countries .modal-body ul li {
+    padding: 0 2.08vw;
+    padding-bottom: 2.2vh;
+    margin-bottom: 2.2vh;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voted-countries .modal-body ul li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.voted-countries .modal-body ul li .country-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.voted-countries .modal-body ul li .country-name .flag {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.voted-countries .modal-body ul li .country-name .flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.voted-countries .modal-body ul li p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 1.7vh;
+}
+
+.voted-countries .modal-body .hide-container {
+    padding: 0 2.08vw;
+    padding-top: 2.2vh;
+    border-top: 1px solid #fff;
+}
+
+.voted-countries .modal-body .hide-container .btn {
+    background-color: #00A53A;
+    border-radius: 4px;
+    font-size: 16px;
+    font-size: 1.7vh;
+}
+
+.success-modal {}
+
+.success-modal span.close-modal {
+    cursor: pointer;
+
+}
+
+.success-modal .modal-body {
+    padding: 7.77vh 70px;
+    position: relative;
+    text-align: center;
+}
+
+.success-modal span.close-modal::before {
+    content: url(../img/close-square.svg);
+    position: absolute;
+    top: 2.22vh;
+    right: 20px;
+
+}
+
+
+.success-modal .success-icon {
+    width: 13.33vh;
+    height: 13.33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5.55vh;
+}
+
+.success-modal .success-icon::before {
+    content: "";
+    background-image: url(../img/success-icon.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.success-modal h3 {
+    font-size: 20px;
+    font-size: 2.22vh;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-bottom: 3.33vh;
+    font-weight: 600;
+}
+
+.success-modal p {
+    font-size: 20px;
+    font-size: 2.22vh;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-bottom: 3.33vh;
+    font-weight: 400;
+}
+
+.success-modal .success-footer {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    padding-top: 3.33vh;
+}
+
+.success-modal .success-footer p {
+    font-size: 14px;
+    font-size: 1.55vh;
+    font-weight: 400;
+}
+
+.success-modal .success-footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.success-modal .success-footer ul li {}
+
+.success-modal .success-footer ul li a {
+    display: block;
+    width: 8vh;
+    height: 8vh;
+}
+
+.success-modal .success-footer ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.success-modal.show .modal-dialog {
+    transform: none;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+
+    .vps-page {}
+
+    .vps-page .vps-bg {}
+
+
+    .vps-page .vps-bg::before {}
+
+    .vps-page .vps-bg .video-bg {}
+
+    .vps-page .vps-content {}
+
+    .vps-page .vps-content .container {}
+
+    .vps-page .vps-content .container .sub-container {
+        max-width: unset;
+        padding: 3.33vh 5vw;
+        text-align: center;
+    }
+
+    .vps-page .vps-content .vps-header {
+        height: 5.8vh;
+    }
+
+    .vps-page .vps-content .vps-header img {}
+
+
+    .vps-page .vps-content .vps-body {}
+
+    .vps-page .vps-content .vps-body h1 {
+        font-size: 16px;
+        font-size: 3.7vw;
+        padding-bottom: 3.2vh;
+        margin-bottom: 3.2vh;
+    }
+
+
+    .vps-page .vps-content .vps-body h1 strong {}
+
+    .vps-page .vps-content .vps-body h2 {
+        /* font-size: 18px; */
+        font-size: 1.93vh;
+    }
+
+    .vps-page .vps-content .vps-body .vps-num {
+        /* font-size: 86px; */
+        font-size: 20vw;
+        margin-top: 2.2vh;
+    }
+
+    .vps-page .vps-content .vps-body .vps-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.15vh;
+    }
+
+    .vps-page .vps-content .vps-body .vps-details ul {}
+
+    .vps-page .vps-content .vps-body .vps-details ul li {}
+
+    .vps-page .vps-content .vps-body .vps-details ul li img {}
+
+    .vps-page .vps-content .vps-body .vps-details .more-btn {}
+
+    .vps-page .vps-content .vps-body .voting-form {
+        flex-wrap: wrap;
+        /* gap: 10px; */
+        gap: 1.07vh 2.32vw;
+        justify-content: space-between;
+    }
+
+    .vps-page .vps-content .vps-body .voting-form .form-control {
+        width: 48%;
+        /* width: 38.37vw; */
+    }
+
+
+    .vps-page .vps-content .vps-body .voting-form .form-control::placeholder {}
+
+
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container .selection {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container .select2-selection--single {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container .select2-selection--single .select2-selection__rendered {}
+
+    .select2-container--default .select2-search--dropdown .select2-search__field {}
+
+    .select2-container--default .select2-selection--single .select2-selection__clear {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__rendered {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__placeholder {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-search--dropdown .select2-search__field {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__arrow {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-selection--single .select2-selection__arrow b {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-results__option {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-results__option--selectable {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-search--dropdown {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-search--dropdown .select2-search__field {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-search--dropdown .select2-search__field {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-results {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-results__options {}
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container--default .select2-results>.select2-results__options {}
+
+
+    .select2-results__option {}
+
+    .select2-results__option--selectable {}
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {}
+
+    .vps-page .vps-content .vps-body .voting-form .vote-btn {
+        width: 100%;
+
+    }
+
+    .vps-page .vps-content .vps-footer {}
+
+    .vps-page .vps-content .vps-footer p {}
+
+    .vps-page .vps-content .vps-footer ul {
+        justify-content: center;
+    }
+
+    .vps-page .vps-content .vps-footer ul li {}
+
+    .vps-page .vps-content .vps-footer ul li a {}
+
+    .vps-page .vps-content .vps-footer ul li a img {}
+
+
+    .voted-countries {}
+
+    .voted-countries .modal-dialog {
+        width: auto;
+    }
+
+    .voted-countries .modal-content {}
+
+    .voted-countries .modal-body {}
+
+    .voted-countries .modal-body h2 {}
+
+    .voted-countries .modal-body>p {}
+
+    .voted-countries .modal-body ul {}
+
+    .voted-countries .modal-body ul li {}
+
+    .voted-countries .modal-body ul li:last-child {}
+
+    .voted-countries .modal-body ul li .country-name {}
+
+    .voted-countries .modal-body ul li .country-name .flag {}
+
+    .voted-countries .modal-body ul li .country-name .flag img {}
+
+    .voted-countries .modal-body ul li p {}
+
+    .voted-countries .modal-body .hide-container {}
+
+    .voted-countries .modal-body .hide-container .btn {}
+
+    .success-modal {}
+
+    .success-modal span.close-modal {}
+
+    .success-modal .modal-body {}
+
+    .success-modal span.close-modal::before {}
+
+
+    .success-modal .success-icon {}
+
+    .success-modal .success-icon::before {}
+
+
+    .success-modal h3 {}
+
+    .success-modal p {}
+
+    .success-modal .success-footer {}
+
+    .success-modal .success-footer p {}
+
+    .success-modal .success-footer ul {}
+
+    .success-modal .success-footer ul li {}
+
+    .success-modal .success-footer ul li a {}
+
+    .success-modal .success-footer ul li a img {}
+
+    .success-modal.show .modal-dialog {}
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .vps-page .vps-content .vps-body .voting-form .form-control {
+        width: 49%;
+    }
+
+    .vps-page .vps-content .vps-body .voting-form .select2-container {
+        width: 100% !important;
+    }
+
+    .vps-page .vps-content .vps-body .voting-form .vote-btn {
+        width: 100%;
+    }
+
+    .vps-page .vps-content .vps-body .voting-form {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .vps-page .vps-content .container .sub-container{
+        text-align: center;
+    }
+
+    .vps-page .vps-content .vps-body .vps-details{
+        justify-content: center;
+    }
+    .vps-page .vps-content .vps-footer ul{
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .vps-page .vps-content .container .sub-container {
+        max-width: 50%;
+    }
+}
